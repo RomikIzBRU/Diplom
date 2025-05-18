@@ -3,6 +3,10 @@ import logging
 from aiogram import Bot, Dispatcher
 from config import TOKEN
 from handlers import start, shop, help, support, admin
+from services.db import create_users_table
+
+create_users_table()
+
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)
