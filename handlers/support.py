@@ -1,6 +1,4 @@
-# support.py
 from aiogram import Router, types, F, Bot
-from aiogram.filters import Command
 import re
 from config import RESPONSABLE_EMPLOYER, SECONDARY_BOT_TOKEN
 

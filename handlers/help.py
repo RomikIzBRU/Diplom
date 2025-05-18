@@ -5,7 +5,6 @@ from aiogram.types import ReplyKeyboardRemove
 
 router = Router()
 
-
 @router.callback_query(lambda c: c.data == "help")
 async def help_command(callback: types.CallbackQuery):
     await callback.message.answer("Раздел помощи. Выберите вопрос:", reply_markup=faq_keyboard)

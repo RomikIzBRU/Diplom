@@ -10,3 +10,12 @@ admin_panel_keyboard = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
+edit_goods_keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [KeyboardButton(text="➕ Добавить категорию"), KeyboardButton(text="➕ Добавить товар")],
+        [KeyboardButton(text="✏️ Изменить категорию"), KeyboardButton(text="✏️ Изменить товар")],
+        [KeyboardButton(text="🗑️ Удалить категорию"), KeyboardButton(text="🗑️ Удалить товар")],
+        [KeyboardButton(text="🔙 Назад в админ-панель")]
+    ],
+    resize_keyboard=True
+)
